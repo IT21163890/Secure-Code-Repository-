@@ -1,0 +1,25 @@
+{
+  "name": "secure-code-repo",
+  "version": "1.0.0",
+  "description": "A secure code repository application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "server": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  },
+
+  "author": "W.C.Gihan",
+  "license": "ISC"
+}
